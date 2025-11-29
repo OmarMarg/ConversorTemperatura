@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperatura</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <form>
+        <h1>Conversor de temperatura</h1>
+        <input type="text" id="textBox"><br>
+
+        <input type="radio" id="ktc" name="unit" checked>
+            <label for="ktc">Kelvin a Celsius</label><br>
+        
+        <input type="radio" id="ktf" name="unit">
+            <label for="ktf">Kelvin a Fahrenheit</label><br>
+        
+        <input type="radio" id="ctf" name="unit">
+            <label for="ctf">Celsius a Fahrenheit</label><br>
+        
+        <input type="radio" id="ctk" name="unit">
+            <label for="ctk">Celsius a Kelvin</label><br>
+
+        <input type="radio" id="ftc" name="unit">
+            <label for="ftc">Fahrenheit a Celcius</label><br>
+
+        <input type="radio" id="ftk" name="unit">
+            <label for="ftk">Fahrenheit a Kelvin</label><br>
+
+        <button type="button" onclick="convertirTemp()">Convertir</button>
+
+        <p id="result" >Selecciona una unidad</p>
+    </form>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
